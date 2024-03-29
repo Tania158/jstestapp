@@ -25,9 +25,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Clone the project
-        run: git clone https://github.com/Tania158/nodejstestapp.git
-
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
